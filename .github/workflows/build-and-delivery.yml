@@ -5,6 +5,11 @@ on:
     #branches: [main]
     types:
       - completed
+permissions:
+  contents: read
+  actions: read
+  # другие необходимые разрешения
+
 jobs:
   cd:
     runs-on: ubuntu-22.04
