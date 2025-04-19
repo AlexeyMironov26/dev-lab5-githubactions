@@ -33,6 +33,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
+          working-directory: .
           context: .
           file: ./Dockerfile
           push: true
