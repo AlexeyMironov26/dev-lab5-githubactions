@@ -16,6 +16,8 @@ jobs:
         with:
           username: ${{ vars.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: List files
+        run: ls -l
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
