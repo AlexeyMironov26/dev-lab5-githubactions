@@ -33,9 +33,9 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
-          working-directory: ./docker
-          context: ./docker
-          file: ./docker/Dockerfile
+          #working-directory: ./docker
+          context: .
+          file: ./Dockerfile
           push: true
           tags: ${{ vars.DOCKERHUB_USERNAME }}/my-app:latest
 
